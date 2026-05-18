@@ -26,26 +26,3 @@ The complete data pipeline is documented in `bank_churn_analysis.ipynb`:
 2. **EDA & Hypothesis Testing**: Conducted Chi-Square tests for categorical variables and Mann-Whitney U / T-tests for continuous variables to validate churn drivers.
 3. **Feature Engineering**: Applied one-hot encoding, binning (e.g., Age Groups, Salary Groups), and MinMax scaling.
 4. **Machine Learning**: Trained a `LogisticRegression` model evaluated using Stratified K-Fold cross-validation. Optimized the decision boundary using a Precision-Recall curve to find the threshold (59%) that maximizes the F1-Score.
-
-## 🚀 Running Locally
-
-To run this dashboard on your own machine:
-
-1. **Clone the repository**:
-   ```bash
-   git clone <your-repo-url>
-   cd Bank+Customer+Churn
-   ```
-
-2. **Install the dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Run the Streamlit app**:
-   ```bash
-   python -m streamlit run dashboard.py
-   ```
-
-## 🌐 Deployment
-This app is ready to be deployed on [Streamlit Community Cloud](https://streamlit.io/cloud). Simply connect your GitHub repository and point the main file path to `dashboard.py`.
