@@ -72,7 +72,7 @@ def get_theme(mode: str) -> dict:
 
 @st.cache_data
 def load_data() -> pd.DataFrame:
-	data_path = "cleaned_data.csv"
+	data_path = "data/cleaned_data.csv"
 	df = pd.read_csv(data_path)
 	df.columns = [c.lower() for c in df.columns]
 
